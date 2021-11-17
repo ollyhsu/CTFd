@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   ctfd:
@@ -101,6 +101,7 @@ networks:
     frp_containers:
         driver: overlay
         internal: true
+        attachable: true
         ipam:
             config:
                 - subnet: 172.2.0.0/16
